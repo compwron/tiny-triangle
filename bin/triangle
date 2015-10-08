@@ -1,6 +1,4 @@
 #!/usr/bin/env ruby
 
 require_relative '../lib/triangle'
-
-sides = ARGV.map(&:to_i)
-puts Triangle.new(*sides).type
+puts Triangle.new(*ARGV.map(&:to_i)).type

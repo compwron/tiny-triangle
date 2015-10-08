@@ -7,12 +7,12 @@ class Triangle
     @a = a
     @b = b
     @c = c
-    @type = triangle_type(a, b, c)
+    @type = triangle_type
   end
 
   private
 
-  def triangle_type(a, b, c)
+  def triangle_type
     if equilateral?
       OPTIONS[0]
     elsif pythagorean?
@@ -44,7 +44,7 @@ class Triangle
     all_sides = [@a, @b, @c]
     all_sides.combination(2).each do |combo|
       last_side = all_sides.reject { |i| combo.include?(i) }.first || combo.first
-      return false if combo.inject(:+) < last_side
+      return false if combo.inject(:+) <= last_side
     end
     true
   end
