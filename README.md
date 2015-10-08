@@ -9,7 +9,7 @@ A little code problem, for the joy of the attempt.
 ./bin/triangle 1 1 1
 Equilateral
 
-./bin/triangle 1 1 2
+./bin/triangle 2 2 3
 Isosceles
 
 ./bin/triangle 3 4 5
