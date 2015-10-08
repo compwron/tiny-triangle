@@ -1,5 +1,4 @@
-Triangle
---------
+# Triangle
 
 A little code problem, for the joy of the attempt.
 
